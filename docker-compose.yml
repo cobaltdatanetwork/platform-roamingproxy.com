@@ -52,8 +52,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    restart: "no"  # Run only once
-    command: python app/backend_pre_start.py  # Only check database connectivity
+    restart: "no"
+    command: bash scripts/prestart.sh
     env_file:
       - .env
     environment:
