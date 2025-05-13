@@ -160,7 +160,7 @@ const TopNav = () => {
     >
       <Flex align="center" justify="space-between" maxW="1200px" mx="auto">
         {/* Logo */}
-        <Link href="https://cloud.thedataproxy.com">
+        <Link href="https://cloud.roamingproxy.com">
           <Image src={Logo} alt="Logo" h="40px" />
         </Link>
 

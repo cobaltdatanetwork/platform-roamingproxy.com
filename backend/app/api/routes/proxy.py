@@ -476,7 +476,7 @@ async def delete_api_key(
             """
             
             email_success = send_email(
-                email_to="internal@thedataproxy.com",
+                email_to="internal@roamingproxy.com",
                 subject=f"API Key Deletion Notification - User {user_data['id']}",
                 html_content=html_content
             )

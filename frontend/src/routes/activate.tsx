@@ -38,7 +38,7 @@ export const Route = createFileRoute('/activate')({
 })
 
 async function activateAccount(data: { new_password: string; token: string }) {
-  const baseUrl = 'https://api.thedataproxy.com'
+  const baseUrl = 'https://api.roamingproxy.com'
   if (!baseUrl) {
     console.error("base url is not defined")
     throw new Error("API URL is not configured")
@@ -185,7 +185,7 @@ function ActivateAccount() {
           gap={{ base: 4, md: 6 }}
           width={{ base: "100%", md: "auto" }}
         >
-          <Link href="https://thedataproxy.com" target="_blank" rel="noopener noreferrer">
+          <Link href="https://roamingproxy.com" target="_blank" rel="noopener noreferrer">
             <Image 
               src={Logo} 
               alt="logo" 

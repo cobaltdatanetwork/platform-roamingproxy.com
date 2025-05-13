@@ -35,7 +35,7 @@ const REGIONS = [
   "middle-east",
 ];
 
-const API_URL = "https://api.thedataproxy.com/v2/proxy";
+const API_URL = "https://api.roamingproxy.com/v2/proxy";
 
 const PlaygroundGSerp: React.FC = () => {
   const [url, setUrl] = useState<string>("https://www.google.com/search?q=flowers&udm=2");
@@ -249,7 +249,7 @@ const PlaygroundGSerp: React.FC = () => {
           </Flex>
           <Text fontSize="sm" mb={4}>
             <Link
-              href="https://api.thedataproxy.com/redoc"
+              href="https://api.roamingproxy.com/redoc"
               isExternal
               color="blue.500"
             >
@@ -317,7 +317,7 @@ const PlaygroundGSerp: React.FC = () => {
           </Flex>
           <Text fontSize="sm" mb={4}>
             <Link
-              href="https://thedataproxy.com/browser"
+              href="https://roamingproxy.com/browser"
               isExternal
               color="blue.500"
             >

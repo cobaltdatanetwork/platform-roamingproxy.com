@@ -32,7 +32,7 @@ interface ApiKey {
   request_count?: number;
 }
 
-const API_URL = "https://api.thedataproxy.com/v2/proxy";
+const API_URL = "https://api.roamingproxy.com/v2/proxy";
 
 async function fetchSubscriptions(): Promise<Subscription[]> {
   const token = localStorage.getItem("access_token");
@@ -41,7 +41,7 @@ async function fetchSubscriptions(): Promise<Subscription[]> {
   }
 
   try {
-    const response = await fetch("https://api.thedataproxy.com/v2/customer/subscriptions", {
+    const response = await fetch("https://api.roamingproxy.com/v2/customer/subscriptions", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -70,7 +70,7 @@ async function fetchProxyApiAccess(): Promise<ProxyApiAccess> {
   }
 
   try {
-    const response = await fetch("https://api.thedataproxy.com/v2/proxy-api/access", {
+    const response = await fetch("https://api.roamingproxy.com/v2/proxy-api/access", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

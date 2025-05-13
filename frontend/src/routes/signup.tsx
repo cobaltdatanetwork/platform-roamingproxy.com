@@ -123,7 +123,7 @@ function SignUp() {
           gap={{ base: 4, md: 6 }}
           width={{ base: "100%", md: "auto" }}
         >
-          <Link href="https://thedataproxy.com" target="_blank" rel="noopener noreferrer">
+          <Link href="https://roamingproxy.com" target="_blank" rel="noopener noreferrer">
             <Image 
               src={Logo} 
               alt="logo" 

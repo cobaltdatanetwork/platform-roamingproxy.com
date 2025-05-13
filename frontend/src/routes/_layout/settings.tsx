@@ -23,7 +23,7 @@ import DeleteAccount from "../../components/UserSettings/DeleteAccount";
 import UserInformation from "../../components/UserSettings/UserInformation";
 
 const fetchBillingPortal = async (token: string) => {
-  const response = await fetch("https://api.thedataproxy.com/v2/customer-portal", {
+  const response = await fetch("https://api.roamingproxy.com/v2/customer-portal", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

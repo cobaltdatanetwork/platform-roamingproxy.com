@@ -85,7 +85,7 @@ def send_email(
 def generate_activation_email(email_to: str, token: str) -> EmailData:
     project_name = settings.PROJECT_NAME
     subject = f"{project_name} - Activate Your Account"
-    link = f"https://cloud.thedataproxy.com/activate?token={token}"
+    link = f"https://cloud.roamingproxy.com/activate?token={token}"
     html_content = f"""
     <html>
         <body>
@@ -180,7 +180,7 @@ async def create_customer_portal(
     try:
         portal_session = stripe.billing_portal.Session.create(
             customer=current_user.stripe_customer_id,
-            return_url="https://cloud.thedataproxy.com"
+            return_url="https://cloud.roamingproxy.com"
         )
         
         logger.info(f"Created customer portal session for user: {current_user.email}, url: {portal_session.url}")

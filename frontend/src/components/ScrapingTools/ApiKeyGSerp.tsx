@@ -30,7 +30,7 @@ interface ApiKeyGSerpProps {
   token: string | null;
 }
 
-const API_URL = "https://api.thedataproxy.com/v2/proxy";
+const API_URL = "https://api.roamingproxy.com/v2/proxy";
 
 const ApiKeyGSerp: React.FC<ApiKeyGSerpProps> = ({ token }) => {
   const [apiKeys, setApiKeys] = useState<ApiKey[]>([]);
@@ -49,7 +49,7 @@ const ApiKeyGSerp: React.FC<ApiKeyGSerpProps> = ({ token }) => {
   const fetchProxyApiAccess = async () => {
     if (!token) return;
     try {
-      const response = await fetch("https://api.thedataproxy.com/v2/proxy-api/access", {
+      const response = await fetch("https://api.roamingproxy.com/v2/proxy-api/access", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
